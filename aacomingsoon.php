@@ -1,12 +1,17 @@
 <?php
-/*
-	Plugin Name: AA Coming Soon 
-	Author: A. Roy
-	Version: 8.0
-	Author URI:Author has not enough money to buy a domain 
-*/
+/**
+ * Plugin Name: AA Coming Soon
+ * Plugin URI: https://wordpress.org/plugins/aacomingsoon/
+ * Description: It's a simple coming soon extension from AA Extension House . 
+ * Version: 1.0
+ * Author: A. Roy / A. Mahmud
+ * Author URI: http://webdesigncr3ator.com
+ * Support Email : contact2us.aa@gmail.com
+ * License: GPL2
+ **/
 
-///algoridom 
+
+///Algorithm
 //create a option page with image upload option 
 // make a statement with is_home() 
 // display it and wp die()
