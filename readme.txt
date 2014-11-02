@@ -16,7 +16,7 @@ It's a simple coming soon extension by AA Extension. But it is still in developm
 This plugin is created for making sure that, a coming soon page for your website. It is still in development phase. We try to make it most simple as we do same thing for our other plugins.
 
 
-### AA Cash Calculator Plugin by http://webdesigncr3ator.com
+### AA Coming Soon Plugin by http://webdesigncr3ator.com
 
 <br />
 
