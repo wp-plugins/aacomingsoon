@@ -3,7 +3,7 @@
  * Plugin Name: AA Coming Soon
  * Plugin URI: https://wordpress.org/plugins/aacomingsoon/
  * Description: It's a simple coming soon extension from AA Extension House . 
- * Version: 1.0
+ * Version: 1.1
  * Author: aaextention
  * Author URI: http://webdesigncr3ator.com
  * Support Email : contact2us.aa@gmail.com
@@ -22,7 +22,7 @@ add_action('admin_menu', 'baw_create_menu');
 function baw_create_menu() {
 
 	//create new top-level menu
-	add_menu_page('Comming soon', 'BAW Settings', 'administrator', __FILE__, 'baw_settings_page',plugins_url('/images/icon.png', __FILE__));
+	add_menu_page('Coming soon', 'Coming Soon', 'administrator', __FILE__, 'baw_settings_page');
 
 	//call register settings function
 	add_action( 'admin_init', 'register_mysettings' );
@@ -69,9 +69,11 @@ function baw_settings_page() {
 </div>
 <?php } 
 
+add_action("wp_head","abc");
 
+function abc(){
 ///is home 
-
+if(!is_user_logged_in()){
 if( !is_admin() && esc_attr( get_option('third_option') ) == "1"){
 	echo "<!--doctype html--><head><title>Offline</title></head><center style='background:#f1f1f1;'><h1>".get_bloginfo('blogname')."</h1>";
 	//echo "<img src='".esc_attr( get_option('new_option_name') )."'/>";
@@ -82,4 +84,6 @@ if( !is_admin() && esc_attr( get_option('third_option') ) == "1"){
 	
 	die();
 }
+}
 
+}
